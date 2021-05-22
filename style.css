@@ -1,0 +1,18 @@
+/* CSS HEX */
+:root{
+--hunter-green: #4b644aff;
+--morning-blue: #89a894ff;
+--misty-rose: #fee9e1ff;
+--cinereous: #8d7471ff;
+--black-coffee: #392f2dff;
+--dark-liver-horses: #50423fff;
+--rich-black-fogra-29: #00171fff;)}
+body {
+    background-color: var(--morning-blue);
+  }
+  h1 {
+    color: var(--black-coffee);
+  }
+  p {
+    color: var(--dark-liver-horses);
+  }

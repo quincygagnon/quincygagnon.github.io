@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="style.css">
-<title>This is my site :D</title>
-</head>
-<body>
 
-<h1>babys First Heading</h1>
-<p>babys first paragraph!</p>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>UI Survey</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            Zoe Gagnon
+        </header>
+    </div>
+    <div class="content">
+        <h1 class="special">SEG3125: UI Survey</h1>
+        <p class="special">Hi there! For this survey you'll be evaluating <a
+                href="https://www.incredibox.com/demo/">Incredibox</a>,
+            a music app that lets you mix your own beats. Head on over to that link and follow the instructions
+            to start. Then, come back here and fill out the short survey below.</p>
+        <a href="https://www.incredibox.com/demo/">
+            <img src="assets/ss.PNG" alt="Screenshot of Incredibox" class="center">
+        </a>
+        <h2 class="qnumber">Question 1</h2>
+        <h3 class="q">How would you rate the ease of use of this site?</h3>
+        <form>
+            <input type="radio" id="veryeasy" name="ease" value="veryeasy">
+            <label for="veryeasy">Very easy to use</label><br>
+            <input type="radio" id="someeasy" name="ease" value="someeasy">
+            <label for="someeasy">Somewhat easy to use</label><br>
+            <input type="radio" id="neither" name="ease" value="neither">
+            <label for="neither">Equally easy and difficult to use</label><br>
+            <input type="radio" id="somehard" name="ease" value="somehard">
+            <label for="somehard">Somewhat difficult to use</label><br>
+            <input type="radio" id="veryhard" name="ease" value="veryhard">
+            <label for="veryhard">Very difficult to use</label>
+        </form>
+
+        <h2 class="qnumber">Question 2</h2>
+        <h3 class="q">Which version(s) did you use?</h3>
+        <form>
+            <input type="checkbox" id="version1" name="version1" value="alpha">
+            <label for="version1">Alpha</label><br>
+            <input type="checkbox" id="version2" name="version2" value="littlemiss">
+            <label for="version2">Little Miss</label><br>
+            <input type="checkbox" id="version3" name="version3" value="sunrise">
+            <label for="version3">Sunrise</label><br>
+            <input type="checkbox" id="version4" name="version4" value="thelove">
+            <label for="version4">The Love</label><br>
+            <input type="checkbox" id="version5" name="version5" value="brazil">
+            <label for="version5">Brazil</label><br>
+            <input type="checkbox" id="version6" name="version6" value="alive">
+            <label for="version6">Alive</label><br>
+            <input type="checkbox" id="version7" name="version7" value="jeevan">
+            <label for="version7">Jeevan</label><br>
+            <input type="checkbox" id="version8" name="version8" value="dystopia">
+            <label for="version8">Dystopia</label><br>
+            <input type="checkbox" id="version9" name="version9" value="null">
+            <label for="version9">Unsure/Don't remember</label>
+        </form>
+
+        <h2 class="qnumber">Question 3</h2>
+        <h3 class="q">Would you recommend this site to a friend?</h3>
+        <form>
+            <select name="rec" id="rec">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Unsure">Unsure/Maybe</option>
+            </select>
+        </form>
+
+        <h2 class="qnumber">Question 4</h2>
+        <h3 class="q">Do you have any suggestions on how to improve the Incredibox site?</h3>
+        <textarea name="suggestion" rows="10" cols="50">Type here...</textarea>
+
+        <h2 class="qnumber">Question 5</h2>
+        <h3 class="q">Please enter your name and email below.</h3>
+        <form>
+            <label for="name">Name:<br></label>
+            <input type="text" id="Name" name="name"><br>
+            <label for="email">Email address:<br></label>
+            <input type="text" id="email" name="email"><br>
+        </form>
+        <form>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+<footer>Website designed by Zoe Gagnon for SEG3125<br>Lab 1, Construction of a Survey</footer>
+
 
 </body>
+
 </html>

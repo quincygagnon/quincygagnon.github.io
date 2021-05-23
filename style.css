@@ -1,5 +1,7 @@
-/* CSS HEX */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap');
+
 :root{
+--pine-tree: #232f23ff;
 --hunter-green: #4b644aff;
 --morning-blue: #89a894ff;
 --misty-rose: #fee9e1ff;
@@ -8,11 +10,76 @@
 --dark-liver-horses: #50423fff;
 --rich-black-fogra-29: #00171fff;}
 body {
-    background-color: var(--morning-blue);
+    background-color: var(--hunter-green);
+    padding:0;
+    margin:0;
   }
   h1 {
     color: var(--black-coffee);
+    font-family: 'Cabin', sans-serif;
+    font-size: 45px;
   }
   p {
     color: var(--dark-liver-horses);
+    font-family: 'Cabin', sans-serif;
+    font-size: 25px;
+  }
+ 
+  h2{
+    color: var(--dark-liver-horses);
+    font-family: 'Cabin', sans-serif;
+    font-size: 22px;
+  }
+  h3{
+    color: var(--dark-liver-horses);
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+  }
+  header{
+      box-sizing: border-box;
+      background-color: var(--pine-tree);
+      font-family: 'Playfair Display', serif;
+      color: mistyrose;
+      font-size: 60px;
+      padding-top: 50px; padding-bottom: 30px;
+      padding-left: 60px;
+  }
+  footer{
+    box-sizing: border-box;
+    background-color: var(--pine-tree);
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    color: var(--cinereous);
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px; padding-bottom: 20px;
+  }
+  .content{
+      box-sizing: border-box;
+      background-color: var(--morning-blue);
+      margin: auto;
+      width: 80%;
+      padding-top: 25px; padding-bottom:40px; 
+      padding-left: 30px; padding-right: 30px;
+  }
+  form{
+    color: var(--dark-liver-horses);
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  .center{
+      display:block;
+      margin-left:auto;
+      margin-right:auto;
+  }
+  h2.qnumber{
+    margin-bottom:0
+  }
+  h3.q{
+    margin-top:4px; margin-bottom: 12px
+  }
+  textarea{
+      box-sizing: border-box;
+      display: block;
   }

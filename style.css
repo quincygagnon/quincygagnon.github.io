@@ -84,7 +84,6 @@ body {
       display: block;
   }
   img{
-        max-width: 100%;
+        width: 60%;
         height: auto;
-        width: auto\9; /* ie8 */
   }

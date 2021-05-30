@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  
 </head>
 
 <body>
@@ -18,13 +18,19 @@
 <div id="Client" class="tabcontent">
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
-	Choose a Category:
-	<select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
-	</select>
+	Choose your Categories (if you have no preferences, simply click on the Submit button):
+	<form>
+    <!-- onchange="populateListProductChoices(this.id, 'displayProduct')"-->
+    <input type="checkbox" id="dietSelect" name="dietSelect" value="LactoseIntolerant">
+    <label for="LactoseIntolerant">LactoseIntolerant</label><br>
+    <input type="checkbox" id="dietSelect" name="dietSelect" value="NutAllergy">
+    <label for="NutAllergy">NutAllergy</label><br>
+    <input type="checkbox" id="dietSelect" name="dietSelect" value="Organic">
+    <label for="Organic">Organic</label>
+  </form>
+  <button id="Submit" type="button" class="block" onclick="setRes('displayProduct')">
+		Submit
+	</button>
 </div>
 
 <div id="Products" class="tabcontent">

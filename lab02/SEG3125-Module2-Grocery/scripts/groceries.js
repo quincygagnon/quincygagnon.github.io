@@ -3,24 +3,77 @@
 // A set of ingredients should be added to products		 
 
 var products = [
-	{
-		name: "brocoli",
-		vegetarian: true,
-		glutenFree: true,
+	{//1
+		name: "yogurt",
+		LactoseIntolerant: false,
+		NutAllergy: true,
+		Organic: true,
 		price: 1.99
 	},
-	{
-		name: "bread",
-		vegetarian: true,
-		glutenFree: false,
+	{//2
+		name: "almond granola",
+		LactoseIntolerant: true,
+		NutAllergy: false,
+		Organic: true,
 		price: 2.35
 	},
-	{
+	{//3
 		name: "salmon",
-		vegetarian: false,
-		glutenFree: true,
+		LactoseIntolerant: true,
+		NutAllergy: true,
+		Organic: false,
 		price: 10.00
+	},
+	{//4
+		name: "rice cake",
+		LactoseIntolerant: true,
+		NutAllergy: true,
+		Organic: false,
+		price: 3.00
+	},
+	{//5
+		name: "nutella",
+		LactoseIntolerant: true,
+		NutAllergy: false,
+		Organic: false,
+		price: 4.50
+	},
+	{//6
+		name: "oat milk",
+		LactoseIntolerant: true,
+		NutAllergy: false,
+		Organic: true,
+		price: 5.50
+	},
+	{//7
+		name: "passion fruit",
+		LactoseIntolerant: true,
+		NutAllergy: true,
+		Organic: true,
+		price: 2.00
+	},
+	{//8
+		name: "lofthouse cookies",
+		LactoseIntolerant: false,
+		NutAllergy: true,
+		Organic: false,
+		price: 4.00
+	},
+	{//9
+		name: "ramen",
+		LactoseIntolerant: true,
+		NutAllergy: true,
+		Organic: false,
+		price: 0.50
+	},
+	{//10
+		name: "cottage cheese",
+		LactoseIntolerant: false,
+		NutAllergy: true,
+		Organic: true,
+		price: 3.50
 	}
+
 ];
 	
 
@@ -30,14 +83,18 @@ var products = [
 
 function restrictListProducts(prods, restriction) {
 	let product_names = [];
+	console.log(restriction)
 	for (let i=0; i<prods.length; i+=1) {
-		if ((restriction == "Vegetarian") && (prods[i].vegetarian == true)){
-			product_names.push(prods[i].name);
+		if ((restriction.includes("LactoseIntolerant")) && (prods[i].LactoseIntolerant == false)){
+			
 		}
-		else if ((restriction == "GlutenFree") && (prods[i].glutenFree == true)){
-			product_names.push(prods[i].name);
+		else if (restriction.includes("NutAllergy") && (prods[i].NutAllergy == false)){
+			
 		}
-		else if (restriction == "None"){
+		else if (restriction.includes("Organic") && (prods[i].Organic == false)){
+			
+		}
+		else{
 			product_names.push(prods[i].name);
 		}
 	}

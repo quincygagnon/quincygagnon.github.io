@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+  
+</head>
+
+<body>
+
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="tab">
+  <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+  <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+  <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+  <h3>Client Information</h3>
+  <p>Tell us a bit about you.</p>
+	Choose your Categories (if you have no preferences, simply click on the Submit button):
+	<form>
+    <!-- onchange="populateListProductChoices(this.id, 'displayProduct')"-->
+    <input type="checkbox" id="dietSelect" name="dietSelect" value="LactoseIntolerant">
+    <label for="LactoseIntolerant">LactoseIntolerant</label><br>
+    <input type="checkbox" id="dietSelect" name="dietSelect" value="NutAllergy">
+    <label for="NutAllergy">NutAllergy</label><br>
+    <input type="checkbox" id="dietSelect" name="dietSelect" value="Organic">
+    <label for="Organic">Organic</label>
+  </form>
+  <button id="Submit" type="button" class="block" onclick="setRes('displayProduct')">
+		Submit
+	</button>
+</div>
+
+<div id="Products" class="tabcontent">
+  <h3>Your targeted products</h3>
+  <p>We preselected products based on your restrictions.</p>
+	 Choose items to buy:
+	 <div id="displayProduct"></div>
+	 <button id="addCart" type="button" class="block" onclick="selectedItems()">
+		Add selected items to cart.
+	</button>
+</div>
+
+<div id="Cart" class="tabcontent">
+  <h3>Cart</h3>
+  <p>Here is your cart.</p>
+  <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>

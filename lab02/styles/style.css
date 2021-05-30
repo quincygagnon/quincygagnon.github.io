@@ -1,5 +1,7 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
-
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap');
+:root{
+--pine-tree: #232f23ff;}
 /* Style the tab */
 .tab {
   overflow: hidden;
@@ -34,4 +36,26 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+header{
+  box-sizing: border-box;
+  color: var(--pine-tree);
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-weight: 300;
+  padding-top: 20px; padding-bottom: 15px;
+  padding-left: 30px;
+}
+footer{
+  box-sizing: border-box;
+  color: var(--pine-tree);
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 20px; padding-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }

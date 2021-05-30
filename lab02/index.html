@@ -6,7 +6,11 @@
 </head>
 
 <body>
-
+<div>
+  <header>
+    VeganVibez Grocery Store
+  </header>
+</div>
 <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
@@ -20,7 +24,6 @@
   <p>Tell us a bit about you.</p>
 	Choose your Categories (if you have no preferences, simply click on the Submit button):
 	<form>
-    <!-- onchange="populateListProductChoices(this.id, 'displayProduct')"-->
     <input type="checkbox" id="dietSelect" name="dietSelect" value="LactoseIntolerant">
     <label for="LactoseIntolerant">LactoseIntolerant</label><br>
     <input type="checkbox" id="dietSelect" name="dietSelect" value="NutAllergy">
@@ -47,6 +50,11 @@
   <h3>Cart</h3>
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
+</div>
+<div>
+  <footer>
+    Created by Zoe Gagnon<br>For SEG3125, Summer 2021
+  </footer>
 </div>
 
 <script src="scripts/groceries.js"></script>

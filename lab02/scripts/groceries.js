@@ -82,7 +82,7 @@ var products = [
 // prices should be included in this list, as well as a sort based on price
 
 function restrictListProducts(prods, restriction) {
-	let product_names = [];
+	let products = [];
 	console.log(restriction)
 	for (let i=0; i<prods.length; i+=1) {
 		if ((restriction.includes("LactoseIntolerant")) && (prods[i].LactoseIntolerant == false)){
@@ -95,11 +95,14 @@ function restrictListProducts(prods, restriction) {
 			
 		}
 		else{
-			product_names.push(prods[i].name);
+			products.push(prods[i]);
 		}
 	}
-	return product_names;
+	return products;
 }
+
+
+
 
 // Calculate the total price of items, with received parameter being a list of products
 function getTotalPrice(chosenProducts) {

@@ -52,28 +52,36 @@ function populateListProductChoices(res,s2) {
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
 	// <label for="Bread">Bread/label><br>
-		
+		optionArray.sort(compare);
 	for (i = 0; i < optionArray.length; i++) {
 			
-		var productName = optionArray[i];
+		var product = optionArray[i];
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
-		checkbox.value = productName;
+		checkbox.value = product.name;
 		s2.appendChild(checkbox);
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
-		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
+		label.htmlFor = product.name;
+		label.appendChild(document.createTextNode(product.name+" - $"+product.price));
 		s2.appendChild(label);
 		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
 	}
 }
-	
+function compare(a,b){
+	if ((a.price)<b.price){
+		return -1;
+	}
+	if (a.price>b.price){
+		return 1;
+	}
+	return 0;
+}
 // This function is called when the "Add selected items to cart" button in clicked
 // The purpose is to build the HTML to be displayed (a Paragraph) 
 // We build a paragraph to contain the list of selected items, and the total price
@@ -100,7 +108,7 @@ function selectedItems(){
 		
 	// add paragraph and total price
 	c.appendChild(para);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
+	c.appendChild(document.createTextNode("Total Price is $" + getTotalPrice(chosenProducts) ));
 		
 }
 

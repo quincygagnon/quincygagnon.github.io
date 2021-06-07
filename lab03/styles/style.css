@@ -52,9 +52,9 @@ main{
   padding-left: 2rem;
   padding-top: 2rem;
 }
-form{
+.form{
   font-family: 'magic mushroom';
-  padding-bottom: 22px;
+  font-size:22px;
 }
 .left-sidebar {
   background-color: pink;

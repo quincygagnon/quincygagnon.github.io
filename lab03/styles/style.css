@@ -1,12 +1,12 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
 @font-face {
-  font-family: Cheri Liney;
-  src: url(styles/CHERL___.TTF) format('truetype');
+  font-family: 'Cheri Liney';
+  src: url("CHERL___.TTF") format('truetype');
   font-weight: normal;
   font-style: normal;}
   @font-face{
-  font-family: magic mushroom;
-  src: url(styles/magicmushroom.otf);
+  font-family: 'magic mushroom';
+  src: url("MagicMushroom.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -27,6 +27,8 @@
 header{
   background-color: var(--salmon-pink);
   font-family: 'Cheri Liney';
+  font-weight: normal;
+  font-style: normal;
   font-size: 3em;
   padding: 1rem;
   padding-top:1.3rem;

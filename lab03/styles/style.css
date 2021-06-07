@@ -53,7 +53,7 @@ main{
   padding-top: 2rem;
 }
 form{
-  color: var(--dark-liver-horses);
+  font-family: 'magic mushroom';
   padding-bottom: 22px;
 }
 .left-sidebar {

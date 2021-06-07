@@ -1,0 +1,100 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap');
+:root{
+  --amaranth-purple: #ab364dff;
+  --salmon-pink: #ff8595ff;
+  --pink: #ffc2caff;
+  --misty-rose: #ffe4e1ff;
+  --raisin-black: #231f20ff;}
+
+  body {
+    font-family: 'magic mushroom';
+      display: grid;
+      height: 100vh;
+      grid-template: auto 1fr auto / 1fr 3fr 1fr
+  }
+header{
+  background-color: var(--salmon-pink);
+  font-family: 'Cheri Liney';
+  font-size: 56px;
+  padding: 1rem;
+  padding-top:1.3rem;
+  padding-bottom:0.5rem;
+  grid-column: 1 / 4;
+}
+footer{
+  background-color: var(--salmon-pink);
+  font-family: 'magic mushroom';
+  font-size: 18px;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+}
+h3{
+  font-size: 36px;
+  padding:0;
+  margin:0;
+  font-family: 'magic mushroom';
+  
+}
+p{
+  font-size:22px;
+  padding:0;
+  margin:0;
+}
+label{
+  font-size: 22px;
+}
+main{
+  font-family: 'magic mushroom';
+  background-color: mistyrose;
+  grid-column: 2 / 3;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+form{
+  color: var(--dark-liver-horses);
+  padding-bottom: 22px;
+}
+.left-sidebar {
+  background-color: pink;
+  grid-column: 1 / 2;
+  font-family: 'magic mushroom';
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.right-sidebar {
+  background-color: pink;
+  grid-column: 3 / 4;
+  font-family: 'magic mushroom';
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+buttontext{
+  font-family: 'magic mushroom';
+  font-size: 22px;
+}
+.accordion{
+  cursor: pointer;
+  background-color: pink;
+  border:none;
+  width: 100%;
+  text-align: left;
+  font-size: 36px !important;
+  font-family: 'magic mushroom';
+}
+.accordion:after{
+  content: '  +';
+}
+.active:after{
+  content: "  -";
+  
+}
+.accordion:hover{
+  background-color: var(--salmon-pink);
+}
+.panel{
+  padding: 1rem;
+  display:none;
+  overflow:hidden;
+}

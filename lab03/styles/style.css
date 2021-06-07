@@ -1,6 +1,5 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@300&display=swap');
-:root{
+
   --amaranth-purple: #ab364dff;
   --salmon-pink: #ff8595ff;
   --pink: #ffc2caff;
@@ -89,7 +88,6 @@ buttontext{
 }
 .active:after{
   content: "  -";
-  
 }
 .accordion:hover{
   background-color: var(--salmon-pink);

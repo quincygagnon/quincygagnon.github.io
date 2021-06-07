@@ -1,4 +1,15 @@
 /* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+@font-face {
+  font-family: Cheri Liney;
+  src: url(styles/CHERL___.TTF) format('truetype');
+  font-weight: normal;
+  font-style: normal;}
+  @font-face{
+  font-family: magic mushroom;
+  src: url(styles/magicmushroom.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 :root{
   --amaranth-purple: #ab364dff;
   --salmon-pink: #ff8595ff;

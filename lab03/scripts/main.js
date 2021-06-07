@@ -111,5 +111,16 @@ function selectedItems(){
 	c.appendChild(para);
 	
 }
-
+function fontUp(){
+	var bod = document.body;
+	bod.style.fontSize = '140%';
+}
+function fontDown(){
+	var bod = document.body;
+	bod.style.fontSize = '80%';
+}
+function fontReg(){
+	var bod = document.body;
+	bod.style.fontSize = '100%';
+}
 

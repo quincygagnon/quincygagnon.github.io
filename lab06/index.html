@@ -1,0 +1,259 @@
+<!doctype html>
+<!-- Here is a link to the code the documents this code is based on
+https://getbootstrap.com/docs/5.0/getting-started/introduction/
+This will help you get started with your code!
+-->
+<html lang="en">
+//all icons are from icons8
+<head>
+    <!-- Required meta tags -->
+    <title>Module 4 Lab</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+        <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/overcast/jquery-ui.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="scripts/service.js"></script>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!--
+I store all of the page information in a container,
+Many websites will use what is called CSS grid layouts, where you will have a header, body, footer and both sides used for ads or other information
+-->
+    <div class="container-lg">
+
+        <!--
+    Most websites now feature what is called a NavBar.
+    The example I give is quite simple with a logo and some text, but you can use it for many navigational patterns
+    https://getbootstrap.com/docs/5.0/components/navbar/
+    -->
+
+        <nav class="navbar bg-dark text-white p-3 my-3 ">
+            <h1><img src="images/company_logo.png" width="150" height="150"> Carvar Physiotherapy Clinic</h1>
+        </nav>
+
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <a class="navbar-brand" href="#" style="padding-left: 5%;">Navigate to...</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#first"><img src="images/serviceswhite.png" alt="logo"
+                                style="size:auto;">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#second"><img src="images/locationswhite.png">Locations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#third"><img src="images/bookingwhite.png">Booking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fourth"><img src="images/staffwhite.png">Team</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class=" p-3 my-3 border bg-light" class="container" id="first">
+            <h1 class=""><img src="images/services.png"> Our services</h1>
+            <!--<p class="p-4 my-3" style="font-size: 25px">We are a small clinic located in Smiths Falls Ontario</p> -->
+            <p style="font-size: 25px; padding-left: 1.5rem">Our clinic offers a variety of services to suit your needs
+                and address various problem areas. </p>
+            <p style="font-size: 25px; padding-left: 1.5rem">These services include:</p>
+            <p style="font-size: 23px; padding-left: 1.5rem">• Massage therapy<br>• Custom braces<br>• Strength
+                training<br>• Joint support<br>• Aqua training</p>
+        </div>
+
+        <div class=" p-3 my-3 border bg-light" class="container" id="second">
+            <h1 class=""><img src="images/locations.png"> Our locations</h1>
+
+            <!--<p class="p-4 my-3" style="font-size: 25px">We are a small clinic located in Smiths Falls Ontario</p> -->
+            <p style="font-size: 25px; padding-left: 1.5rem">We have clinics throughout the Ottawa area.</p>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Orleans
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Phone: (613) 837-1668<br>Fax: (613) 837-1669<br>2701 St Joseph Blvd,
+                        Orleans, ON K1C 1G4</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Centretown
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Phone: (613) 563-9533<br>Fax: (613) 568-9544<br>464 Bank St, Ottawa, ON
+                        K2P 1Z3</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Nepean
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Phone: (613) 727-4786<br>Fax: (613) 727-4799<br>1849 Merivale Rd,
+                        Ottawa, ON K2G 1E3</div>
+                </div>
+            </div>
+        </div>
+        <div class=" p-3 my-3 border bg-light" class="container" id="third">
+            <h1><img src="images/booking.png"> Book an appointment</h1><br>
+
+            <div class="row">
+                <div class="col">
+                    <select class="form-select" id="location" aria-label="Select location">
+                        <option selected>Select a location</option>
+                        <option value="1">Orleans</option>
+                        <option value="2">Centretown</option>
+                        <option value="3">Nepean</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="physelect" aria-label="Select physician">
+                        <option selected>Select a physician</option>
+                        <option value="AC">Dr. Antoinette Cardraw (Wed-Sun)</option>
+                        <option value="JH">Joleen Hampton (Tue-Sat)</option>
+                        <option value="MG">Marc Gallagher (Mon-Fri)</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <select class="form-select" id="service" aria-label="Select service">
+                        <option selected>Select a service</option>
+                        <option value="1">Massage therapy</option>
+                        <option value="2">Custom bracing</option>
+                        <option value="3">Strength training</option>
+                        <option value="4">Joint support</option>
+                        <option value="5">Aqua training</option>
+                    </select>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="fname" class="form-control" placeholder="First name" aria-label="First name">
+                </div>
+                <div class="col">
+                    <input type="text" id="lname" class="form-control" placeholder="Last name" aria-label="Last name">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-8">
+                    <input type="email" id="email" class="form-control" placeholder="Email address"
+                        aria-label="Email address">
+                </div>
+                <div class="col-md-2">
+                    <div class="input-group">
+                        <input type="text" id="date" class="form-control" placeholder="Date">
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="12" aria-label="Hour">
+                        <span class="input-group-text">:</span>
+                        <input type="text" class="form-control" placeholder="00" aria-label="Minute">
+                    </div>
+                </div>
+            </div>
+            <h1><img src="images/payment.png"> Payment Information</h1>
+            <p>We require payment information in case of cancellations or no-shows</p>
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="card-name-input" class="form-control" placeholder="Cardholder name" aria-label="Cardholder name">
+                </div>
+                <div class="col">
+                    <input type="text" id="card-number-input" class="form-control" placeholder="Card number (8910 5700 8705 0000)" aria-label="Card number">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="card-cvv-input" class="form-control" placeholder="CVV" aria-label="CVV" data-toggle="tooltip" data-bs-placement="left" title="Your CVV is the three digits on the back of your card.">
+                </div>
+                <div class="col">
+                    <input type="text" id="card-exp-input" class="form-control" placeholder="Expiration date (dd/yy)" aria-label="Expiration date (dd/yy)">
+                </div>
+                <div class="col">
+                    <input type="text" id="phone" class="form-control" placeholder="Phone number (XXX) XXX-XXXX" aria-label="phone" data-toggle="tooltip" data-placement="top" title="We may need to contact you in case of any changes">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-md-2">
+                    <button type="button" class="subinfobtn form-control" style="font-size: larger;">Submit</button>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class=" p-3 my-3 border bg-light" class="container" id="fourth">
+            <h1><img src="images/staff.png"> Our team</h1>
+            <div class="row justify-content-around">
+                <div class="card" style="width: 18rem;"><br>
+                    <img src="images/female-doctor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Dr. Antoinette Cardraw is a graduate of Queen's University Medical
+                            School.
+                            He
+                            specializes in physical and sport injuries including concussions.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;"><br>
+                    <img src="images/doctor.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Joleen Hampton is a registered physiotherapist who graduated from
+                            Western
+                            Univeristy in 1999. She has taken post graduate courses in manual therapy,
+                            orthotics, and
+                            physical rehabilitaion.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;"><br>
+                    <img src="images/male-doctor-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Marc Gallagher is a registered physiotherapist who graduated from
+                            the
+                            University of Ottawa. He has 18 years of clinical experience in the field of
+                            orthopaedics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar bg-dark text-white p-3 my-3">
+        </nav>
+
+    </div>
+    <!-- here we input our javascript helper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+</body>
+
+</html>

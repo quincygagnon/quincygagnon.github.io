@@ -10,14 +10,15 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
-.navbar h1 {
+.navbar-brand {
+  padding-top:20px!important;
   font-family: "Homemade Apple";
-  font-size: 40px;
-  color: #800026;
+  font-size: 40px!important;
+  color: #800026!important;
 }
 .navbar .links {
   margin-left: auto;
@@ -29,17 +30,31 @@
 }
 .navbar a:hover {
   color: #f1356d;
+  background-color: none!important;
 }
 .content {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 40px auto;
   padding: 20px;
 }
-
+.dropdown-menu {
+  right: 0 !important;
+  left: auto !important;
+  background-color: none;
+  overflow: hidden;
+}
+.dropdown-item:hover{
+  background-color: white!important;
+}
+.justify-content-right{
+  right:0px;
+  left:auto;
+}
 .recipe-preview {
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
+  height: 25rem;
 }
 
 .recipe-preview:hover{
@@ -63,8 +78,57 @@
   text-decoration: none;
 }
 
+.sugg{
+  height: 3.5rem!important;
+  margin-top:0;
+  margin-bottom:20px;
+  padding-bottom:20px;
+  padding-top: 0px;
+  padding-left:0;
+  padding-right:0;
+}
+.sugg:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0);
+}
+.recipe-preview:hover h2{
+  font-weight:bold;
+}
 .img-preview {
   width: 100%;
   height: 90%;
   object-fit: cover;
+}
+
+.Lemonbar p{
+  font-size: 20px;
+}
+
+.Lemonbar h2{
+  padding-top: 40px;
+}
+
+.ingredients li{
+  font-family: "Quicksand";
+  color: #333;
+  font-size: 20px;
+}
+.instructions li{
+  font-family: "Quicksand";
+  color: #333;
+  font-size: 20px;
+}
+
+.suggBox{
+  
+}
+.outline-box{
+  margin-left: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
+  border: 1px solid #a0a0a0;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+.outline-box p{
+  font-size: 18px;
 }

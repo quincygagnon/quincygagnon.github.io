@@ -1,5 +1,4 @@
 import RecipeList from './RecipeList';
-import Navy from './Navy';
 var tagfilter;
 const RecipesDis = () => {
     const pathname = window.location.pathname

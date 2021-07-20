@@ -22,6 +22,7 @@ export default {
         'Gluten-Free': 'Sans-gluten',
         'Keto': 'Keto',
         'About': 'À-propos',
-        'Glossary': 'Glossaire'
+        'Glossary': 'Glossaire',
+        'Language': 'Langage'
     }
 };

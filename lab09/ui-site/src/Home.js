@@ -7,7 +7,6 @@ const Home = () => {
     const tagfilter = 'All';
 
     return (
-        <I18nProvider locale={LOCALES.FRENCH}>
             <div className="home">
                 <h2>{translate("Homepage")}</h2>
                 
@@ -16,7 +15,6 @@ const Home = () => {
 
 
             </div>
-        </I18nProvider>
 
     )
 }

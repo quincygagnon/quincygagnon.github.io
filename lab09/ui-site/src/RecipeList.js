@@ -23,11 +23,8 @@ const RecipeList = (props) => {
         { title: translate("Fruit Crisp"), body: " blah pie", link:"/applepie", id: 4, pic: fruitcrisp, tags:['Dessert', 'Vegetarian', 'Keto', 'All']},
         { title: translate("Moroccan Pork Stew"), body: " blah pie", link:"/porkstew", id: 6, pic: pork, tags:['Dinner', 'Gluten-Free', 'Keto', 'All']}
     ])
-    console.log(tagfilter)
     recipes = recipes.filter(recipe => recipe.tags.includes(tagfilter));
-    console.log(recipes)
     return (
-        <I18nProvider locale={LOCALES.FRENCH}>
             <Container className="recipe-list">
             <Row>
             {recipes.map((recipe) => (
@@ -40,7 +37,6 @@ const RecipeList = (props) => {
             ))}
             </Row>
         </Container>
-        </I18nProvider>
         
       );
 }

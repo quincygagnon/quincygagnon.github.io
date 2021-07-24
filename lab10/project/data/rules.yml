@@ -1,0 +1,39 @@
+rules:
+ - rule: activate subscribe form
+   steps:
+   - intent: subscribe
+   - action: newsletter_form
+   - active_loop: newsletter_form
+
+ - rule: submit form
+   condition:
+   - active_loop: newsletter_form
+   steps:
+   - action: newsletter_form
+   - active_loop: null
+   - action: utter_subscribed
+
+ - rule: activate unsub form
+   steps:
+    - intent: unsubscribe
+    - action: unsub_form
+    - active_loop: unsub_form
+
+ - rule: submit unsub_form
+   condition:
+   - active_loop: unsub_form
+   steps:
+   - action: unsub_form
+   - active_loop: null
+   - action: utter_understood
+   - action: utter_unsubscribed
+
+ - rule: say youre welcome
+   steps:
+   - intent: Thankyou
+   - action: utter_yourewelcome
+
+ - rule: say bye
+   steps:
+   - intent: Goodbye
+   - action: utter_goodbye

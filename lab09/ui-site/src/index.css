@@ -16,7 +16,7 @@
 }
 .navbar-brand {
   padding-top:20px!important;
-  font-family: "Homemade Apple";
+  font-family: "Homemade Apple"!important;
   font-size: 40px!important;
   color: #800026!important;
 }
@@ -27,9 +27,11 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  font-family: "Quicksand";
+  font-size: 20px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #800026;
   background-color: none!important;
 }
 .content {

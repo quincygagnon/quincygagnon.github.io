@@ -23,6 +23,6 @@ export default {
         'Keto': 'Keto',
         'About': 'About',
         'Glossary': 'Glossary',
-        'Language': 'Lanmguage',
+        'Language': 'Language',
     }
 };

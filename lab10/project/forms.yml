@@ -1,0 +1,9 @@
+forms:
+  newsletter_form:
+    required_slots:
+      email:
+      - type: from_text
+  unsub_form:
+    required_slots:
+      reason:
+      - type: from_text

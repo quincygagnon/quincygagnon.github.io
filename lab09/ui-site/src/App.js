@@ -47,7 +47,7 @@ function App() {
                             </NavDropdown>
                             <Nav.Link href='/About'>{translate('About')}</Nav.Link>
                             <Nav.Link href='/Glossary'>{translate('Glossary')}</Nav.Link>
-                            <NavDropdown title='Language' id='basic-nav-dropdown'>
+                            <NavDropdown title={translate('Language')} id='basic-nav-dropdown'>
                                 <NavDropdown.Item onClick={() => setLocale(LOCALES.ENGLISH)}>EN</NavDropdown.Item>
                                 <NavDropdown.Item onClick={() => setLocale(LOCALES.FRENCH)}>FR</NavDropdown.Item>
                             </NavDropdown>
